@@ -4,6 +4,7 @@ Pages must include:
 - Hero section (headline + button)
 - Features section (3 cards)
 - Footer
+  
 Deliverables
 - index.html, style.css, script.js
 - Fully responsive layout
