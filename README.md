@@ -1,4 +1,5 @@
 Build a simple responsive landing page for a job portal:
+
 Pages must include:
 - Navbar with logo & menu
 - Hero section (headline + button)
