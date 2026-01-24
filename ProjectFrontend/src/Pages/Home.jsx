@@ -5,15 +5,15 @@ function Home() {
     <div style={{ display: "flex", gap: "20px", padding: "20px" }}>
       <Card
         title="React Basics"
-        description="Learn React from scratch"
-        image="https://via.placeholder.com/250"
+        description="React for begineers"
+        image="https://cloudmatetechnologies.com/wp-content/uploads/2024/06/react.js.png"
         buttonLabel="Learn More"
       />
 
       <Card
         title="Frontend Dev"
         description="HTML, CSS & JS"
-        image="https://via.placeholder.com/250"
+        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzXwLIZaPTYBwVr990VS_jx0trhiIRLJMP8g&s"
         buttonLabel="Enroll"
       />
     </div>
