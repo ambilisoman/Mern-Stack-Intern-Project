@@ -1,0 +1,281 @@
+/* :root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+
+
+
+.job-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.job-card {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+:root {
+  --peach: #FFDAB3;
+  --beige: #C8AAAA;
+  --rose: #9F8383;
+  --plum: #574964;
+  --white: #ffffff;
+  --dark: #2c2c2c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: var(--peach);
+  color: var(--dark);
+}
+
+.home {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(
+    to right,
+    var(--beige),
+    var(--peach)
+  );
+}
+
+.home h1 {
+  font-size: 42px;
+  color: var(--plum);
+  margin-bottom: 12px;
+}
+
+.home p {
+  font-size: 18px;
+  color: var(--rose);
+  max-width: 600px;
+  margin: auto;
+}
+
+.jobs {
+  padding: 60px 40px;
+}
+
+.jobs h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 30px;
+  color: var(--plum);
+}
+
+.job-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.job-card {
+  background-color: var(--white);
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  border-top: 6px solid var(--rose);
+}
+
+.job-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 30px rgba(0,0,0,0.12);
+}
+
+.job-card h3 {
+  font-size: 20px;
+  color: var(--plum);
+  margin-bottom: 8px;
+}
+
+.job-card p {
+  font-size: 14px;
+  color: var(--rose);
+  margin-bottom: 20px;
+}
+
+.job-card button {
+  background-color: var(--plum);
+  color: var(--white);
+  border: none;
+  padding: 10px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.job-card button:hover {
+  background-color: var(--rose);
+}
+
+.footer {
+  background-color: var(--plum);
+  color: var(--peach);
+  text-align: center;
+  padding: 25px 15px;
+  margin-top: 80px;
+}
+
+.footer p {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.footer-sub {
+  margin-top: 6px;
+  font-size: 13px;
+  color: var(--beige);
+}
+
+
+
+.navbar {
+  background-color: var(--plum);
+  color: var(--white);
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h2 {
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.navbar p {
+  font-size: 14px;
+  color: var(--peach);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+  }
+  .navbar {
+    text-align: center;
+  }
+}
+
+
