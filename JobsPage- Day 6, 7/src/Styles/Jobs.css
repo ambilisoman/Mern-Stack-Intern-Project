@@ -33,3 +33,18 @@
   border-radius: 5px;
   cursor: pointer;
 }
+.apply-btn:hover {
+  background: #3b3fc4;
+}
+
+.loader {
+  color: #4e54c8;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.error {
+  color: red;
+  font-size: 16px;
+  margin-top: 20px;
+}
